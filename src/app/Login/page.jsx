@@ -3,7 +3,7 @@ import UniversidadLogo from "../source/escudoU.svg";
 
 export default function Login(params) {
   return (
-    <div className="fontPoppins">
+    <div className="fontPoppins bg-mi-gama-200">
       <section className="flex flex-row h-screen items-center">
         {/* Login left banner  */}
         <div className="h-screen w-1/2">
@@ -14,7 +14,7 @@ export default function Login(params) {
         </div>
 
         {/* Login right banner */}
-        <div className="bg-white flex mx-auto max-w-md w-full w-1/2 px-12">
+        <div className=" flex mx-auto max-w-md w-full w-1/2 px-12">
           <div className="w-full h-100">
             <h1 className="text-xl text-center font-bold">Universidad Libre</h1>
             <h1 className="text-2xl text-center font-bold leading-tight m-8">
