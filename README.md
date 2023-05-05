@@ -1,2 +1,2 @@
 # requisition-system-frontend
-Frontend of the requisition 
+Frontend of the requisition app
