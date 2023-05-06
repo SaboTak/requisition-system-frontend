@@ -10,14 +10,14 @@ export default function Requisitation(params) {
 
   const [activeFirms, setActiveFirms] = useState(false);
   
-  const myItems = ["item 1", "item 2"];
+  const myItems = ["item 1", "item 2", "item 3"];
   const countSteps = 4;
 
   return (
     <div className="fontPoppins bg-mi-gama-200 h-screen">
       <div className="grid grid-cols-2 gap-5 grid-span-1 h-full">
         {/* Left part */}
-        <div className=" p-2 w-full bg-mi-gama-50 p-5 h-full">
+        <div className="w-full bg-mi-gama-50 p-8 h-full">
           <div>
             <Image alt="Decanatura" className="mx-auto p-3 pb-5" src={SignoMomentaneo} />
           </div>
@@ -40,7 +40,7 @@ export default function Requisitation(params) {
 
           <div className="text-center m-5">
             <button
-              className="bg-mi-gama-300 px-5 py-2 rounded hover:bg-mi-gama-400"
+              className="text-white bg-mi-gama-300 px-5 py-2 rounded hover:font-bold hover:bg-mi-gama-400"
               type="submit">
               FIRMAR
             </button>
@@ -57,30 +57,30 @@ export default function Requisitation(params) {
         {/* Right part 1 (Top cards)*/}
         <div className=" text-center w-full h-full bg-mi-gama-200 py-10 pr-5">
           <div className="grid grid-cols-3 gap-3 mb-3">
-            <div className="border-2 border-mi-gama-50">
+            <div className="font-bold border-mi-gama-50">
               <h1>Inicial Date</h1>
               <h1>01/01/23</h1>
             </div>
-            <div className="flex items-center justify-center">
-              <button className="border my-auto border-mi-gama-50 rounded-full p-2 cursor-default">
+            <div className="flex items-center justify-center w-full">
+              <button className="text-white bg-mi-gama-50 outline-none outline-black rounded-full my-auto p-2 cursor-default font-bold">
                 In progress
               </button>
             </div>
 
-            <div className="border-2 border-mi-gama-50">
+            <div className="font-bold border-mi-gama-50">
               <h1>Last Date</h1>
               <h1>04/04/23</h1>
             </div>
           </div>
 
           {/* Progress Bar*/}
-          <div className="mt-8 mb-9">
+          <div className="my-8">
             <ProgressBar items={myItems} countSteps={countSteps} />
           </div>
 
           {/* Records */}
           <div className="bg-mi-gama-200 text-start w-full  ">
-            <h1 className=" text-black rounded inline-block pr-2 mt-5 mb-2">
+            <h1 className="text-black rounded inline-block pr-2 mt-5 mb-2">
               Records
               <button className={`text-2xl inline-block absolute ${activeFirms == true ? 'transition duration-1000 transform focus:rotate-90' : 'transition duration-1000 transform focus:rotate--90'}`} >
                 <BiChevronRight  onClick={() => {setActiveFirms(!activeFirms)}} className="" />
@@ -88,48 +88,48 @@ export default function Requisitation(params) {
             </h1>
           </div>
           <div className={`grid grid-cols-3 gap-3 mb-3 text-center ${activeFirms == true ? 'block' : 'hidden'}`}>
-            <div className="border-2 rounded border-mi-gama-50 p-3">
-              <h1>Juanito Perez</h1>
+            <div className="bg-mi-gama-50 text-white border-2 rounded-xl border-mi-gama-50 p-3">
+              <h1 className="font-extrabold">Juanito Perez</h1>
               <h1>Decanatura</h1>
               <h1>Fecha</h1>
             </div>
-            <div className="border-2 rounded border-mi-gama-50 p-3">
-              <h1>Juanito Perez</h1>
+            <div className="bg-mi-gama-50 text-white border-2 rounded-xl border-mi-gama-50 p-3">
+              <h1 className="font-extrabold">Juanito Perez</h1>
               <h1>Decanatura</h1>
               <h1>Fecha</h1>
             </div>
-            <div className="border-2 rounded border-mi-gama-50 p-3">
-              <h1>Juanito Perez</h1>
+            <div className="bg-mi-gama-50 text-white border-2 rounded-xl border-mi-gama-50 p-3">
+              <h1 className="font-extrabold">Juanito Perez</h1>
               <h1>Decanatura</h1>
               <h1>Fecha</h1>
             </div>
-            <div className="border-2 rounded border-mi-gama-50 p-3">
-              <h1>Juanito Perez</h1>
+            <div className="bg-mi-gama-50 text-white border-2 rounded-xl border-mi-gama-50 p-3">
+              <h1 className="font-extrabold">Juanito Perez</h1>
               <h1>Decanatura</h1>
               <h1>Fecha</h1>
             </div>
-            <div className="border-2 rounded border-mi-gama-50 p-3">
-              <h1>Juanito Perez</h1>
+            <div className="bg-mi-gama-50 text-white border-2 rounded-xl border-mi-gama-50 p-3">
+              <h1 className="font-extrabold">Juanito Perez</h1>
               <h1>Decanatura</h1>
               <h1>Fecha</h1>
             </div>
-            <div className="border-2 rounded border-mi-gama-50 p-3">
-              <h1>Juanito Perez</h1>
+            <div className="bg-mi-gama-50 text-white border-2 rounded-xl border-mi-gama-50 p-3">
+              <h1 className="font-extrabold">Juanito Perez</h1>
               <h1>Decanatura</h1>
               <h1>Fecha</h1>
             </div>
-            <div className="border-2 rounded border-mi-gama-50 p-3">
-              <h1>Juanito Perez</h1>
+            <div className="bg-mi-gama-50 text-white border-2 rounded-xl border-mi-gama-50 p-3">
+              <h1 className="font-extrabold">Juanito Perez</h1>
               <h1>Decanatura</h1>
               <h1>Fecha</h1>
             </div>
-            <div className="border-2 rounded border-mi-gama-50 p-3">
-              <h1>Juanito Perez</h1>
+            <div className="bg-mi-gama-50 text-white border-2 rounded-xl border-mi-gama-50 p-3">
+              <h1 className="font-extrabold">Juanito Perez</h1>
               <h1>Decanatura</h1>
               <h1>Fecha</h1>
             </div>
-            <div className="border-2 rounded border-mi-gama-50 p-3">
-              <h1>Juanito Perez</h1>
+            <div className="bg-mi-gama-50 text-white border-2 rounded-xl border-mi-gama-50 p-3">
+              <h1 className="font-extrabold">Juanito Perez</h1>
               <h1>Decanatura</h1>
               <h1>Fecha</h1>
             </div>

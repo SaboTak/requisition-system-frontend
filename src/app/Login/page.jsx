@@ -9,7 +9,7 @@ export default function Login(params) {
         <div className="h-screen w-1/2">
           <Image
             src={UniversidadLogo}
-            className="p-12 bg-login w-full h-full"
+            className="p-20 bg-login w-full h-full "
           />
         </div>
 

@@ -11,7 +11,7 @@ export default function ProgressBar({ items, countSteps }) {
 
   return (
     <div>
-      <div className="bg-gray-200 h-4 rounded-full overflow-hidden outline-none outline-black rounded-full">
+      <div className="bg-gray-200 h-4 overflow-hidden outline-none outline-black rounded-full">
         {items.map((item, index) => (
           <div
             key={index}
